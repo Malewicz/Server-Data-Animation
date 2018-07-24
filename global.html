@@ -1,0 +1,29 @@
+<html>
+   <body>
+
+      <form>
+        {% block content1 %}
+         <p>Measurement Period <input type = "text" name = "Measurement Period"/> (s)</p>
+         <p><input type = "submit" value = "Update Measurement Period" /></p>
+         <p><input type="button"  onclick="button" value="Run" />   <input type="button" onclick="button" value="Pause" />   <input type="submit" name="submit" value="Stop" /></p>
+        {% endblock %}
+      </form>
+
+   </body>
+</html>
+
+<html>
+   <body>
+
+      <form>
+        {% block content2 %}
+          <p><input type="submit" name="add new variable" value="True"></p>
+          <p>Variable Name <input type = "boolean" name = "Variable Name" /></p>
+          <p>Value <input type = "boolean" name = "Value" /></p>
+          <p>Units <input type = "BooleanField" name = "Units" /></p>
+          <p><input type = "submit" value = "Update Variables" /></p>
+        {% endblock %}
+      </form>
+
+   </body>
+</html>

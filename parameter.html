@@ -1,0 +1,14 @@
+<html>
+   <body>
+
+      <form action = "http://localhost:5000/result" method = "POST">
+        {% block content %}
+         <p>Variable Name <input type = "text" name = "Variable Name" /></p>
+         <p>Value <input type = "text" name = "Value" /></p>
+         <p>Units <input type = "text" name = "Units" /></p>
+         <p><input type = "submit" value = "Update" /></p>
+        {% endblock content %}
+      </form>
+
+   </body>
+</html>
